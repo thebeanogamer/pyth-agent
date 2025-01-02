@@ -9,6 +9,7 @@ on:
         description: "Dispatch description"
         required: true
         type: string
+  repository_dispatch: null
 jobs:
   agent-push-image:
     runs-on: ubuntu-latest
