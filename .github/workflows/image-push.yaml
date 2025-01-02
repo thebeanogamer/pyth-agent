@@ -24,6 +24,7 @@ jobs:
           - file: "agent.Dockerfile"
             suffix: "-minimal"
     steps:
+      - run: "echo suffix: ${{ matrix.dockerfile.suffix }} file: ${{ matrix.dockerfile.file }}"
       - uses: actions/checkout@v2
       - uses: aws-actions/configure-aws-credentials@8a84b07f2009032ade05a88a28750d733cc30db1
         with:
